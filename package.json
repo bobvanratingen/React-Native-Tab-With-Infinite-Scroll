@@ -18,8 +18,7 @@
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn",
     "prepack": "bob build",
-    "docs": "ts-node ./documentation/buildDocs.ts",
-    "prepare": "bob build"
+    "docs": "ts-node ./documentation/buildDocs.ts"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -78,12 +77,6 @@
     "react-native": "*",
     "react-native-pager-view": "*",
     "react-native-reanimated": "next"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "jest": {
     "preset": "react-native",

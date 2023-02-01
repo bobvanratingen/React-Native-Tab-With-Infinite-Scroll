@@ -113,7 +113,6 @@ export const ScrollView = React.forwardRef<
 
     return (
       <ScrollViewMemo
-        
         ref={ref}
         bouncesZoom={false}
         style={memoStyle}
